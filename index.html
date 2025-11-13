@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The PDF Profit System™ | From Food Stamps to $47,293/Month in 6 Months</title>
-    <meta name="description" content="Ex-Uber driver discovers underground PDF selling method. Now making $47K/month working 3 hours/day. 2,847 students. Proven system.">
+    <title>PDF Seller Method - How I Make $47,293/Month Selling Simple PDFs</title>
+    <meta name="description" content="Discover the exact blueprint I use to generate $47,293/month selling simple PDF guides. 2,847 students. Real results. No BS.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,8 +23,9 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: #0A0A0A;
+            background: #050505;
             color: #fff;
+            line-height: 1.6;
         }
         
         .font-display {
@@ -32,7 +33,7 @@
         }
         
         .gradient-text {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF6347 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -42,453 +43,613 @@
             background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
         }
         
-        .glow-gold {
-            box-shadow: 0 0 80px rgba(255, 215, 0, 0.5);
-        }
-        
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .animate-pulse-slow {
-            animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: .7; }
+        .subtle-gradient {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 165, 0, 0.1) 100%);
         }
         
         .premium-border {
-            border: 2px solid transparent;
-            background: linear-gradient(#0A0A0A, #0A0A0A) padding-box,
-                        linear-gradient(135deg, #FFD700, #FFA500) border-box;
+            border: 1px solid rgba(255, 215, 0, 0.2);
         }
         
-        .shine {
-            position: relative;
-            overflow: hidden;
+        .glow-subtle {
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.1);
         }
         
-        .shine::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(
-                45deg,
-                transparent 30%,
-                rgba(255, 255, 255, 0.1) 50%,
-                transparent 70%
-            );
-            animation: shine 3s infinite;
-        }
-        
-        @keyframes shine {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-        
-        .text-shadow-glow {
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-        }
-        
-        /* Premium scrollbar */
         ::-webkit-scrollbar {
-            width: 12px;
+            width: 10px;
         }
         
         ::-webkit-scrollbar-track {
             background: #111;
-            border-radius: 10px;
         }
         
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(135deg, #FFD700, #FFA500);
-            border-radius: 10px;
+            background: #333;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
-<body class="bg-black antialiased">
+<body>
 
-    <!-- Urgent Alert Bar -->
-    <div class="premium-gradient text-black py-3 text-center font-bold text-sm sticky top-0 z-50 shine">
-        <span class="animate-pulse">⚠️ WARNING: Price Increases to $297 in 4 hours 23 minutes | 412 People Watching Now</span>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center py-20 px-4 relative overflow-hidden">
-        <!-- Background Effects -->
-        <div class="absolute inset-0">
-            <div class="absolute top-20 left-20 w-96 h-96 bg-yellow-500/10 rounded-full filter blur-3xl animate-float"></div>
-            <div class="absolute bottom-20 right-20 w-96 h-96 bg-orange-500/10 rounded-full filter blur-3xl animate-float" style="animation-delay: 3s;"></div>
-        </div>
-
-        <div class="max-w-6xl mx-auto relative z-10">
-            <!-- Pre-headline -->
-            <div class="text-center mb-6">
-                <span class="bg-red-900/30 border border-red-800 text-red-300 px-4 py-2 rounded-full text-sm inline-block">
-                    ⚠️ My Landlord Was 3 Days From Evicting Me...
-                </span>
+    <!-- Clean Navigation -->
+    <nav class="bg-black/50 backdrop-blur-sm border-b border-gray-900 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <span class="gradient-text">PDFSeller</span> Method
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#proof" class="text-gray-400 hover:text-white transition">Results</a>
+                    <a href="#method" class="text-gray-400 hover:text-white transition">The Method</a>
+                    <a href="#students" class="text-gray-400 hover:text-white transition">Students</a>
+                    <a href="#start" class="premium-gradient text-black px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition">
+                        Get Started
+                    </a>
+                </div>
             </div>
+        </div>
+    </nav>
 
-            <!-- Main Headline -->
-            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-center leading-tight mb-8">
-                <span class="block mb-4">How I Went From</span>
-                <span class="text-red-500 text-6xl md:text-7xl">Stealing Toilet Paper</span>
-                <span class="block mt-4 mb-4 text-4xl md:text-5xl">From McDonald's Bathrooms...</span>
-                <span class="block text-5xl md:text-6xl">To Making</span>
-                <span class="text-7xl md:text-8xl block mt-4 gradient-text font-black text-shadow-glow">$47,293/Month</span>
-                <span class="block mt-4 text-3xl md:text-4xl">Selling Simple PDF Guides From My Laptop</span>
+    <!-- Hero Section - Clean & Professional -->
+    <section class="min-h-screen flex items-center justify-center py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center fade-in">
+            <h1 class="font-display text-5xl md:text-7xl leading-tight mb-6">
+                The Simple Method I Use To Make
+                <span class="block text-6xl md:text-8xl gradient-text font-bold mt-4">$47,293/Month</span>
+                <span class="block text-3xl md:text-4xl mt-4 text-gray-300">Selling PDF Guides Online</span>
             </h1>
-
-            <!-- Subheadline -->
-            <p class="text-xl md:text-2xl text-center text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed">
-                The underground "PDF money method" that's creating more millionaires than crypto... 
-                <span class="text-white font-bold">without any experience, audience, or special skills</span> 
-                (2,847 regular people now earning $5K-$50K/month)
+            
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
+                No inventory. No shipping. No customer service headaches. 
+                Just simple information products with 95% profit margins.
             </p>
 
-            <!-- Emotional Hook -->
-            <div class="bg-gradient-to-r from-red-950/30 to-orange-950/30 border border-red-900 rounded-2xl p-6 max-w-3xl mx-auto mb-12">
-                <p class="text-lg text-center">
-                    <span class="text-red-400 font-bold">6 months ago:</span> Sleeping in my 2003 Honda Civic, showering at Planet Fitness<br>
-                    <span class="text-green-400 font-bold">Today:</span> Just bought my mom a house. Cash. No mortgage.
-                </p>
+            <div class="bg-gray-900/50 rounded-xl p-6 max-w-2xl mx-auto mb-10">
+                <div class="grid grid-cols-3 gap-6 text-center">
+                    <div>
+                        <p class="text-3xl font-bold text-white">2,847</p>
+                        <p class="text-gray-400 text-sm">Active Students</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-white">$8.4K</p>
+                        <p class="text-gray-400 text-sm">Avg Monthly Income</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-white">73%</p>
+                        <p class="text-gray-400 text-sm">Success Rate</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- CTA Section -->
-            <div class="flex flex-col items-center space-y-6">
-                <a href="#get-access" class="premium-gradient text-black font-black text-xl px-14 py-7 rounded-xl hover:scale-105 transition-all duration-300 glow-gold shine text-shadow">
-                    YES! Show Me The PDF Money Method →
-                </a>
-                <p class="text-gray-500 text-sm">
-                    ⚡ 2,847 Students Already Inside • 💰 Average Income: $8,427/month • ⏰ 47 Spots Left
-                </p>
-            </div>
+            <a href="#start" class="premium-gradient text-black font-bold text-lg px-10 py-4 rounded-lg inline-block hover:opacity-90 transition">
+                Learn The Complete Method →
+            </a>
+            
+            <p class="text-gray-500 text-sm mt-4">
+                Start today • Lifetime access • 30-day guarantee
+            </p>
         </div>
     </section>
 
-    <!-- Emotional Story Hook -->
-    <section class="py-20 px-4 bg-gradient-to-b from-black via-gray-950 to-black">
+    <!-- My Story Section -->
+    <section class="py-20 px-6 bg-gray-950/50">
         <div class="max-w-4xl mx-auto">
-            <div class="bg-red-950/20 border border-red-900 rounded-2xl p-8 mb-8">
-                <h2 class="text-3xl font-bold mb-6 text-red-400">October 3rd, 2023. 11:47 PM.</h2>
-                <p class="text-xl text-gray-300 leading-relaxed mb-4">
-                    I was parked behind a Walmart, using their WiFi on my cracked phone.
-                </p>
-                <p class="text-xl text-gray-300 leading-relaxed mb-4">
-                    My ex-girlfriend had just texted me a photo. Her and her new boyfriend. In Cancun.
-                </p>
-                <p class="text-xl text-gray-300 leading-relaxed mb-4">
-                    "Hope you're doing well!" she wrote. I wanted to throw my phone out the window.
-                </p>
-                <p class="text-xl text-gray-300 leading-relaxed mb-4">
-                    I had $7.43 in my bank account. The "check engine" light had been on for 3 months. 
-                    My mom kept calling, asking if I needed money (she didn't have any either).
-                </p>
-                <p class="text-2xl font-bold text-white mt-6">
-                    Then I discovered something that changed everything...
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Discovery That Changed Everything -->
-    <section class="py-20 px-4">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="font-display text-5xl md:text-6xl text-center mb-12">
-                A Random TikTok at 2 AM <span class="gradient-text">Saved My Life</span>
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-12">
+                From Uber Driver to $500K/Year
             </h2>
+            
+            <div class="prose prose-lg text-gray-300 space-y-6">
+                <p>
+                    18 months ago, I was driving for Uber 70 hours a week, barely making $600 after gas and expenses. 
+                    My back was destroyed from sitting all day. My relationship was falling apart because I was never home.
+                </p>
+                
+                <p>
+                    One night at 2 AM, while waiting for rides, I stumbled across a Reddit post about someone making 
+                    $15,000/month selling a PDF guide about Excel tricks. I thought it was complete BS.
+                </p>
+                
+                <p>
+                    But I was desperate. So I spent the next 3 hours researching everything about selling PDFs online. 
+                    What I discovered completely changed my life.
+                </p>
 
-            <div class="bg-gray-900 rounded-2xl p-8">
-                <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                    This 19-year-old kid was showing his Stripe dashboard. <span class="text-white font-bold">$72,000 in one month.</span>
-                </p>
-                <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                    From selling a 27-page PDF about "How to grow on TikTok."
-                </p>
-                <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                    A PDF he made in 3 hours. Using free information from YouTube.
-                </p>
-                <div class="bg-black/50 rounded-xl p-6 my-8">
-                    <p class="text-2xl text-center font-bold text-yellow-400 mb-4">
-                        My brain exploded with one thought:
-                    </p>
-                    <p class="text-3xl text-center font-bold gradient-text">
-                        "If this kid can do it... why can't I?"
-                    </p>
-                </div>
-                <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                    That night, I stayed up until sunrise researching everything about selling PDFs.
-                </p>
-                <p class="text-xl text-gray-300 leading-relaxed">
-                    What I discovered was <span class="text-white font-bold">the biggest untapped goldmine</span> on the internet...
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Shocking Truth Section -->
-    <section class="py-20 px-4 bg-gradient-to-b from-black via-gray-950 to-black">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="font-display text-5xl md:text-6xl text-center mb-12">
-                The <span class="text-red-500">Shocking Truth</span> Nobody Talks About
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-red-950/20 border border-red-800 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-red-400">What They Tell You Works:</h3>
+                <div class="bg-black/50 rounded-xl p-8 my-10 border-l-4 border-yellow-500">
+                    <p class="text-xl text-white font-semibold mb-4">Here's what I learned that night:</p>
                     <ul class="space-y-3 text-gray-300">
-                        <li>❌ Dropshipping (99% fail)</li>
-                        <li>❌ Amazon FBA ($10K+ to start)</li>
-                        <li>❌ Crypto trading (gambling)</li>
-                        <li>❌ SMMA (oversaturated)</li>
-                        <li>❌ Affiliate marketing (takes years)</li>
-                        <li>❌ YouTube/TikTok (1% succeed)</li>
+                        <li>✓ People pay $27-97 for organized information that solves specific problems</li>
+                        <li>✓ You don't need to be an expert (research + organization = valuable product)</li>
+                        <li>✓ Digital products have 95%+ profit margins</li>
+                        <li>✓ One good PDF can generate income for years</li>
                     </ul>
                 </div>
-                <div class="bg-green-950/20 border border-green-800 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4 text-green-400">What Actually Works:</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li>✅ Information products (95% margins)</li>
-                        <li>✅ $27-97 price points (impulse buys)</li>
-                        <li>✅ Solving desperate problems</li>
-                        <li>✅ No inventory or shipping</li>
-                        <li>✅ Start with $0</li>
-                        <li>✅ First sale in 24-48 hours</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="bg-gradient-to-r from-yellow-950/30 to-orange-950/30 rounded-2xl p-8 border border-yellow-800">
-                <h3 class="text-3xl font-bold text-center mb-6 gradient-text">The PDF Gold Rush Is Happening RIGHT NOW</h3>
-                <div class="grid md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <p class="text-4xl font-bold text-white">$4.2B</p>
-                        <p class="text-gray-400">Info Product Market</p>
-                    </div>
-                    <div>
-                        <p class="text-4xl font-bold text-white">327%</p>
-                        <p class="text-gray-400">YoY Growth</p>
-                    </div>
-                    <div>
-                        <p class="text-4xl font-bold text-white">72M</p>
-                        <p class="text-gray-400">Active Buyers</p>
-                    </div>
-                    <div>
-                        <p class="text-4xl font-bold text-white">$47</p>
-                        <p class="text-gray-400">Avg Sale Price</p>
-                    </div>
-                </div>
+                <p>
+                    I created my first PDF that weekend - "The Remote Worker's Tax Deduction Guide" - using free information 
+                    from the IRS website, organized in a simple, actionable format.
+                </p>
+                
+                <p>
+                    <strong class="text-white">First week: 11 sales ($297).</strong> I couldn't believe it. 
+                    <strong class="text-white">First month: $1,847.</strong> I was hooked.
+                    <strong class="text-white">Month 3: $8,400.</strong> I quit Uber.
+                </p>
+                
+                <p>
+                    Today, I have 12 PDFs selling on autopilot, bringing in $40,000-50,000 every single month. 
+                    I work about 3 hours per day. I travel whenever I want. Life is completely different.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Live Proof Dashboard -->
-    <section class="py-20 px-4">
+    <!-- Live Results Dashboard -->
+    <section id="proof" class="py-20 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="font-display text-5xl md:text-6xl text-center mb-4">
-                My Actual Results <span class="gradient-text">(Screenshot From This Morning)</span>
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-12">
+                My Actual Results <span class="gradient-text">(Last 30 Days)</span>
             </h2>
-            <p class="text-xl text-center text-gray-400 mb-12">
-                Refreshed 17 minutes ago at 9:43 AM EST
-            </p>
 
-            <div class="premium-border rounded-2xl p-8 bg-gray-950 glow-gold">
-                <div class="flex items-center justify-between mb-6">
-                    <span class="text-sm text-gray-500">Stripe Dashboard - Last 30 Days</span>
-                    <span class="text-green-400 text-sm animate-pulse">● LIVE</span>
-                </div>
-
+            <div class="bg-gray-900 rounded-xl p-8 premium-border">
                 <div class="grid md:grid-cols-4 gap-6 mb-8">
-                    <div>
-                        <p class="text-gray-400 text-sm mb-1">Gross Revenue</p>
+                    <div class="text-center">
+                        <p class="text-gray-400 text-sm mb-1">Revenue</p>
                         <p class="text-4xl font-bold gradient-text">$47,293</p>
                     </div>
-                    <div>
+                    <div class="text-center">
                         <p class="text-gray-400 text-sm mb-1">Total Sales</p>
-                        <p class="text-4xl font-bold text-green-400">1,027</p>
+                        <p class="text-4xl font-bold text-white">1,184</p>
                     </div>
-                    <div>
-                        <p class="text-gray-400 text-sm mb-1">Conversion Rate</p>
-                        <p class="text-4xl font-bold text-blue-400">8.3%</p>
+                    <div class="text-center">
+                        <p class="text-gray-400 text-sm mb-1">Conversion</p>
+                        <p class="text-4xl font-bold text-white">6.2%</p>
                     </div>
-                    <div>
-                        <p class="text-gray-400 text-sm mb-1">Profit Margin</p>
-                        <p class="text-4xl font-bold text-purple-400">94.7%</p>
+                    <div class="text-center">
+                        <p class="text-gray-400 text-sm mb-1">Profit</p>
+                        <p class="text-4xl font-bold text-green-400">$44,728</p>
                     </div>
                 </div>
 
-                <!-- Sales Ticker -->
-                <div class="bg-black/50 rounded-xl p-4">
-                    <p class="text-sm text-gray-500 mb-3">Recent Sales (Live)</p>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between text-green-400">
-                            <span>✅ John K. purchased - Ohio</span>
-                            <span>$47 - 3 min ago</span>
+                <!-- Product Breakdown -->
+                <div class="bg-black/30 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-300">Top Performing PDFs This Month:</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center py-2 border-b border-gray-800">
+                            <span class="text-gray-300">ADHD Productivity Toolkit</span>
+                            <span class="text-green-400 font-semibold">$8,427</span>
                         </div>
-                        <div class="flex justify-between text-green-400">
-                            <span>✅ Sarah M. purchased - Texas</span>
-                            <span>$97 - 8 min ago</span>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-800">
+                            <span class="text-gray-300">Remote Tax Deduction Guide</span>
+                            <span class="text-green-400 font-semibold">$7,193</span>
                         </div>
-                        <div class="flex justify-between text-green-400">
-                            <span>✅ Mike D. purchased - California</span>
-                            <span>$47 - 14 min ago</span>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-800">
+                            <span class="text-gray-300">Freelancer's Client System</span>
+                            <span class="text-green-400 font-semibold">$6,847</span>
                         </div>
-                        <div class="flex justify-between text-green-400 animate-pulse">
-                            <span>✅ Emma L. is checking out...</span>
-                            <span>$47 - now</span>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-800">
+                            <span class="text-gray-300">TikTok Growth Blueprint</span>
+                            <span class="text-green-400 font-semibold">$5,926</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="text-gray-300">8 Other PDFs Combined</span>
+                            <span class="text-green-400 font-semibold">$18,900</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Student Results -->
-            <div class="mt-16">
-                <h3 class="text-3xl font-bold text-center mb-8">My Students Are <span class="gradient-text">Banking Even More</span></h3>
-                
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-gray-900 rounded-xl p-6">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='%23444' rx='30'/%3E%3C/svg%3E" alt="Profile" class="w-16 h-16 rounded-full mb-4">
-                        <p class="font-bold mb-2">Maria Rodriguez</p>
-                        <p class="text-gray-400 text-sm mb-3">Single Mom, 3 Kids</p>
-                        <p class="text-gray-300 mb-4">
-                            "Was on food stamps. Now making $18K/month. Just put all 3 kids in private school. This saved our family."
-                        </p>
-                        <p class="text-2xl font-bold gradient-text">$18,472/month</p>
+            <!-- Income Progression -->
+            <div class="mt-12 bg-gray-900/50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">My Income Growth Timeline</h3>
+                <div class="grid md:grid-cols-6 gap-4">
+                    <div class="text-center">
+                        <p class="text-sm text-gray-400">Month 1</p>
+                        <p class="text-xl font-bold text-white">$1,847</p>
                     </div>
-
-                    <div class="bg-gray-900 rounded-xl p-6">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='%23444' rx='30'/%3E%3C/svg%3E" alt="Profile" class="w-16 h-16 rounded-full mb-4">
-                        <p class="font-bold mb-2">David Chen</p>
-                        <p class="text-gray-400 text-sm mb-3">Ex-DoorDash Driver</p>
-                        <p class="text-gray-300 mb-4">
-                            "Delivering food 70 hours/week destroyed my back. Started selling PDFs from bed. Quit delivery after week 3."
-                        </p>
-                        <p class="text-2xl font-bold gradient-text">$12,893/month</p>
+                    <div class="text-center">
+                        <p class="text-sm text-gray-400">Month 3</p>
+                        <p class="text-xl font-bold text-white">$8,400</p>
                     </div>
-
-                    <div class="bg-gray-900 rounded-xl p-6">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='%23444' rx='30'/%3E%3C/svg%3E" alt="Profile" class="w-16 h-16 rounded-full mb-4">
-                        <p class="font-bold mb-2">James Wilson</p>
-                        <p class="text-gray-400 text-sm mb-3">College Dropout</p>
-                        <p class="text-gray-300 mb-4">
-                            "Parents kicked me out for dropping out. 4 months later bought them a Tesla. They don't question me anymore."
-                        </p>
-                        <p class="text-2xl font-bold gradient-text">$31,847/month</p>
+                    <div class="text-center">
+                        <p class="text-sm text-gray-400">Month 6</p>
+                        <p class="text-xl font-bold text-white">$18,293</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm text-gray-400">Month 9</p>
+                        <p class="text-xl font-bold text-white">$28,947</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm text-gray-400">Month 12</p>
+                        <p class="text-xl font-bold text-white">$37,482</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm text-gray-400">Now</p>
+                        <p class="text-xl font-bold gradient-text">$47,293</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The System Reveal -->
-    <section class="py-20 px-4 bg-gradient-to-b from-black via-gray-950 to-black">
+    <!-- The Complete Method -->
+    <section id="method" class="py-20 px-6 bg-gray-950/50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="font-display text-5xl md:text-6xl text-center mb-4">
-                The PDF Profit System™
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-4">
+                The Complete PDF Seller Method
             </h2>
             <p class="text-xl text-center text-gray-400 mb-12">
-                The exact step-by-step blueprint my students use to hit $10K/month in 30-60 days
+                Everything you need to build your own PDF business
             </p>
 
-            <!-- System Steps -->
-            <div class="space-y-8">
-                <!-- Step 1 -->
-                <div class="premium-border rounded-2xl p-8 bg-gray-950">
-                    <div class="flex items-start space-x-6">
-                        <div class="premium-gradient text-black text-2xl font-black rounded-full w-14 h-14 flex items-center justify-center flex-shrink-0">
-                            1
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4">The "Money Printer" Niche Formula</h3>
-                            <p class="text-gray-300 mb-4">
-                                My proprietary system finds desperate buyers in 15 minutes. Not "interested" people. DESPERATE buyers with credit cards out.
-                            </p>
-                            <div class="bg-black/50 rounded-lg p-4">
-                                <p class="text-green-400 font-bold">Student Result: Lisa found "ADHD productivity" niche. $8,400 first month.</p>
-                            </div>
-                        </div>
+            <!-- Phase 1 -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 gradient-text">Phase 1: Foundation (Week 1)</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 1: Mindset & Reality Check</h4>
+                        <p class="text-gray-400 mb-4">
+                            Understanding why PDFs work, who buys them, and how to position yourself for success.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• The psychology of information buyers</li>
+                            <li>• Why expertise is overrated (organization > knowledge)</li>
+                            <li>• Setting realistic income goals</li>
+                            <li>• The compound effect of multiple PDFs</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 2: Profitable Niche Selection</h4>
+                        <p class="text-gray-400 mb-4">
+                            My proven process for finding desperate buyers with money to spend.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• The "Problem Stack" method for finding opportunities</li>
+                            <li>• 147 proven PDF niches with buyer data</li>
+                            <li>• Competition analysis framework</li>
+                            <li>• Validation techniques before creating anything</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 3: Market Research Mastery</h4>
+                        <p class="text-gray-400 mb-4">
+                            Deep dive into understanding exactly what your market wants to buy.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Reddit research techniques</li>
+                            <li>• Facebook group infiltration strategy</li>
+                            <li>• Amazon book review mining</li>
+                            <li>• Creating buyer personas that convert</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <!-- Step 2 -->
-                <div class="premium-border rounded-2xl p-8 bg-gray-950">
-                    <div class="flex items-start space-x-6">
-                        <div class="premium-gradient text-black text-2xl font-black rounded-full w-14 h-14 flex items-center justify-center flex-shrink-0">
-                            2
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4">The "3-Hour PDF" Creation System</h3>
-                            <p class="text-gray-300 mb-4">
-                                Turn free information into $47-97 products. My templates + AI prompts = professional PDFs in 3 hours. No writing skills needed.
-                            </p>
-                            <div class="bg-black/50 rounded-lg p-4">
-                                <p class="text-green-400 font-bold">Fact: Average student creates first PDF in 2.7 hours. Sells for $47.</p>
-                            </div>
-                        </div>
+            <!-- Phase 2 -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 gradient-text">Phase 2: Product Creation (Week 2)</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 4: Content Research & Organization</h4>
+                        <p class="text-gray-400 mb-4">
+                            Turn free information into valuable, organized products people pay for.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Information gathering techniques</li>
+                            <li>• The "Value Pyramid" structure</li>
+                            <li>• Making complex topics simple</li>
+                            <li>• Legal ways to use existing information</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 5: PDF Creation Process</h4>
+                        <p class="text-gray-400 mb-4">
+                            Step-by-step system for creating professional PDFs in 4-6 hours.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• The perfect PDF structure (with templates)</li>
+                            <li>• Writing techniques for non-writers</li>
+                            <li>• Design principles that build trust</li>
+                            <li>• Tools and software recommendations</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 6: Professional Polish</h4>
+                        <p class="text-gray-400 mb-4">
+                            Make your PDFs look like $197 products (even if you're charging $27).
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Cover design that converts</li>
+                            <li>• Interior formatting secrets</li>
+                            <li>• Adding worksheets and resources</li>
+                            <li>• Quality control checklist</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <!-- Step 3 -->
-                <div class="premium-border rounded-2xl p-8 bg-gray-950">
-                    <div class="flex items-start space-x-6">
-                        <div class="premium-gradient text-black text-2xl font-black rounded-full w-14 h-14 flex items-center justify-center flex-shrink-0">
-                            3
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4">The "Conversion Crusher" Sales Page</h3>
-                            <p class="text-gray-300 mb-4">
-                                My battle-tested template converts at 8.3%. Just plug in your story. Includes psychological triggers that force sales.
-                            </p>
-                            <div class="bg-black/50 rounded-lg p-4">
-                                <p class="text-green-400 font-bold">Proof: This exact page converted 1,027 sales last month.</p>
-                            </div>
-                        </div>
+            <!-- Phase 3 -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 gradient-text">Phase 3: Sales System (Week 3)</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 7: High-Converting Sales Pages</h4>
+                        <p class="text-gray-400 mb-4">
+                            My exact sales page template that converts at 6.2% consistently.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Sales page psychology and structure</li>
+                            <li>• Writing compelling headlines</li>
+                            <li>• The "Story Stack" method</li>
+                            <li>• Trust elements and social proof</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 8: Pricing & Positioning</h4>
+                        <p class="text-gray-400 mb-4">
+                            Find the perfect price point for maximum profit.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• The psychology of pricing</li>
+                            <li>• Value stacking techniques</li>
+                            <li>• When to use $27 vs $47 vs $97</li>
+                            <li>• Bundle strategies for higher profits</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 9: Payment & Delivery</h4>
+                        <p class="text-gray-400 mb-4">
+                            Set up automated systems that work 24/7.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Payment processor setup (Stripe/PayPal)</li>
+                            <li>• Automated delivery systems</li>
+                            <li>• Protecting your PDFs from piracy</li>
+                            <li>• Customer support automation</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <!-- Step 4 -->
-                <div class="premium-border rounded-2xl p-8 bg-gray-950">
-                    <div class="flex items-start space-x-6">
-                        <div class="premium-gradient text-black text-2xl font-black rounded-full w-14 h-14 flex items-center justify-center flex-shrink-0">
-                            4
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4">The "Free Traffic Tsunami" Method</h3>
-                            <p class="text-gray-300 mb-4">
-                                Get 1,000+ targeted visitors daily without ads. My Reddit/Twitter/TikTok strategy that nobody else teaches.
-                            </p>
-                            <div class="bg-black/50 rounded-lg p-4">
-                                <p class="text-green-400 font-bold">Case Study: Mark got 127 sales from one Reddit post. Zero ad spend.</p>
-                            </div>
-                        </div>
+            <!-- Phase 4 -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 gradient-text">Phase 4: Traffic & Sales (Week 4+)</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 10: Free Traffic Methods</h4>
+                        <p class="text-gray-400 mb-4">
+                            Get your first 100 sales without spending on ads.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Reddit marketing blueprint</li>
+                            <li>• Facebook group strategies</li>
+                            <li>• Twitter/X growth tactics</li>
+                            <li>• SEO for PDF sellers</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 11: Paid Advertising Mastery</h4>
+                        <p class="text-gray-400 mb-4">
+                            Scale to $10K+ months with profitable ads.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Facebook ads from $5/day to $500/day</li>
+                            <li>• Google ads for buyer keywords</li>
+                            <li>• Retargeting strategies</li>
+                            <li>• Scaling while maintaining ROI</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 12: Email Marketing Machine</h4>
+                        <p class="text-gray-400 mb-4">
+                            Build a list that generates sales on autopilot.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• List building strategies</li>
+                            <li>• Email sequences that convert</li>
+                            <li>• Segmentation for higher profits</li>
+                            <li>• Long-term nurture campaigns</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <!-- Step 5 -->
-                <div class="premium-border rounded-2xl p-8 bg-gray-950">
-                    <div class="flex items-start space-x-6">
-                        <div class="premium-gradient text-black text-2xl font-black rounded-full w-14 h-14 flex items-center justify-center flex-shrink-0">
-                            5
-                        </div>
+            <!-- Bonus Modules -->
+            <div>
+                <h3 class="text-3xl font-bold mb-8 gradient-text">Advanced Growth Strategies</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 13: Scaling to Multiple PDFs</h4>
+                        <p class="text-gray-400 mb-4">
+                            Build a portfolio of products for exponential growth.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Product ecosystem planning</li>
+                            <li>• Cross-selling and upselling</li>
+                            <li>• Outsourcing content creation</li>
+                            <li>• Managing multiple products efficiently</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 14: Affiliate Army Building</h4>
+                        <p class="text-gray-400 mb-4">
+                            Get others to sell your PDFs for you.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Setting up affiliate programs</li>
+                            <li>• Recruiting quality affiliates</li>
+                            <li>• Commission structures that work</li>
+                            <li>• Managing affiliate relationships</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 premium-border">
+                        <h4 class="text-xl font-semibold mb-3">Module 15: The $100K Blueprint</h4>
+                        <p class="text-gray-400 mb-4">
+                            Advanced strategies for reaching 6-figure months.
+                        </p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• High-ticket PDF strategies</li>
+                            <li>• Corporate and B2B sales</li>
+                            <li>• Licensing and white label deals</li>
+                            <li>• Building a real business (not just income)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section id="students" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-12">
+                Real Students. Real Results.
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Success Story 1 -->
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-3"></div>
                         <div>
-                            <h3 class="text-2xl font-bold mb-4">The "$10K/Month Scale Machine"</h3>
-                            <p class="text-gray-300 mb-4">
-                                Turn $100 into $1,000/day with my Facebook ads blueprint. Includes winning audiences, ad copy, and scaling formula.
-                            </p>
-                            <div class="bg-black/50 rounded-lg p-4">
-                                <p class="text-green-400 font-bold">Student Average: $1 spent = $4.70 back. Predictable. Scalable.</p>
-                            </div>
+                            <p class="font-semibold">Sarah Mitchell</p>
+                            <p class="text-sm text-gray-400">Teacher → PDF Seller</p>
                         </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Was making $3K/month teaching. Created study guide PDFs for students. 
+                        Now making $12K/month working half the hours. This changed everything for my family."
+                    </p>
+                    <p class="text-xl font-bold gradient-text">$12,847/month</p>
+                </div>
+
+                <!-- Success Story 2 -->
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-semibold">Mike Davidson</p>
+                            <p class="text-sm text-gray-400">Uber Driver → PDF Empire</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Destroyed my back driving 14 hours daily. Started with one PDF about gig economy taxes. 
+                        Now have 7 PDFs generating $18K/month. Haven't driven in 8 months."
+                    </p>
+                    <p class="text-xl font-bold gradient-text">$18,293/month</p>
+                </div>
+
+                <!-- Success Story 3 -->
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-semibold">Jessica Chen</p>
+                            <p class="text-sm text-gray-400">Stay-at-Home Mom</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Needed income but couldn't leave my kids. Created parenting PDFs during nap times. 
+                        First month: $800. Now: $7K/month. Work 2 hours per day."
+                    </p>
+                    <p class="text-xl font-bold gradient-text">$7,426/month</p>
+                </div>
+
+                <!-- Success Story 4 -->
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-semibold">David Park</p>
+                            <p class="text-sm text-gray-400">Failed Dropshipper</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Lost $15K on dropshipping over 2 years. PDFs are completely different. 
+                        No inventory, no suppliers, just pure profit. Made my money back in 4 months."
+                    </p>
+                    <p class="text-xl font-bold gradient-text">$9,847/month</p>
+                </div>
+
+                <!-- Success Story 5 -->
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-semibold">Lisa Rodriguez</p>
+                            <p class="text-sm text-gray-400">Freelance Writer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Was trading hours for dollars. Now my PDFs sell while I sleep. 
+                        Same writing skills, 10x the income. Should have done this years ago."
+                    </p>
+                    <p class="text-xl font-bold gradient-text">$14,293/month</p>
+                </div>
+
+                <!-- Success Story 6 -->
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-semibold">Tom Williams</p>
+                            <p class="text-sm text-gray-400">College Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Started selling study guides to classmates. Expanded online. 
+                        Making more than my professors. Graduated debt-free with $40K saved."
+                    </p>
+                    <p class="text-xl font-bold gradient-text">$6,472/month</p>
+                </div>
+            </div>
+
+            <!-- Success Metrics -->
+            <div class="mt-12 bg-gray-900/50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-center mb-6">Student Success Metrics</h3>
+                <div class="grid md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <p class="text-3xl font-bold gradient-text">73%</p>
+                        <p class="text-gray-400">Make First Sale Within 14 Days</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold gradient-text">$1,847</p>
+                        <p class="text-gray-400">Average Month 1 Revenue</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold gradient-text">$8,426</p>
+                        <p class="text-gray-400">Average Month 3 Revenue</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold gradient-text">187</p>
+                        <p class="text-gray-400">Students Over $10K/Month</p>
                     </div>
                 </div>
             </div>
@@ -496,307 +657,230 @@
     </section>
 
     <!-- What You Get -->
-    <section class="py-20 px-4">
+    <section class="py-20 px-6 bg-gray-950/50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="font-display text-5xl md:text-6xl text-center mb-12">
-                Everything You Get <span class="gradient-text">Today</span>
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-12">
+                Everything Included In PDF Seller Method
             </h2>
 
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Core System -->
-                <div class="bg-gray-900 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-6 gradient-text">Core System ($2,997 Value)</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Core Training -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">Core Training Library</h3>
                     <ul class="space-y-3 text-gray-300">
-                        <li>✅ Complete PDF Profit System™ (6 Modules)</li>
-                        <li>✅ 47 Fill-In-The-Blank PDF Templates</li>
-                        <li>✅ My Personal Sales Page Templates (8.3% conversion)</li>
-                        <li>✅ AI Prompt Library (327 prompts)</li>
-                        <li>✅ Niche Research Spreadsheet</li>
-                        <li>✅ Traffic Generation Playbook</li>
-                        <li>✅ Facebook Ads Mastery Course</li>
-                        <li>✅ Email Marketing Sequences</li>
+                        <li>✅ 15 Core Training Modules (10+ hours)</li>
+                        <li>✅ Step-by-step video walkthroughs</li>
+                        <li>✅ Downloadable action guides</li>
+                        <li>✅ Templates and swipe files</li>
+                        <li>✅ Lifetime updates included</li>
+                        <li>✅ Mobile app access</li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">Resources & Tools</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>✅ 147 Profitable Niche List</li>
+                        <li>✅ Sales Page Templates (6.2% conversion)</li>
+                        <li>✅ Email Sequence Templates</li>
+                        <li>✅ Ad Templates & Targeting</li>
+                        <li>✅ Legal Templates & Disclaimers</li>
+                        <li>✅ Pricing Calculator Tool</li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">Community & Support</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>✅ Private Discord Community (2,847 members)</li>
+                        <li>✅ Weekly Q&A calls with me</li>
+                        <li>✅ PDF reviews and feedback</li>
+                        <li>✅ Accountability partners</li>
+                        <li>✅ Success story sharing</li>
+                        <li>✅ 24/7 community support</li>
                     </ul>
                 </div>
 
                 <!-- Bonuses -->
-                <div class="bg-gradient-to-br from-yellow-950/20 to-orange-950/20 rounded-xl p-8 border border-yellow-800">
-                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">🎁 Fast Action Bonuses</h3>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">Exclusive Bonuses</h3>
                     <ul class="space-y-3 text-gray-300">
-                        <li>🔥 <span class="font-bold">BONUS 1:</span> My Top 5 PDFs ($8K+ each) - Ready to sell</li>
-                        <li>🔥 <span class="font-bold">BONUS 2:</span> Private Discord Community (2,847 members)</li>
-                        <li>🔥 <span class="font-bold">BONUS 3:</span> Weekly Live Coaching Calls</li>
-                        <li>🔥 <span class="font-bold">BONUS 4:</span> Done-For-You Ad Campaigns</li>
-                        <li>🔥 <span class="font-bold">BONUS 5:</span> 1-on-1 Setup Call With My Team</li>
-                        <li>🔥 <span class="font-bold">BONUS 6:</span> $50K/Month Advanced Strategies</li>
+                        <li>🎁 My top 3 PDFs to model ($20K+ each)</li>
+                        <li>🎁 Quick Start Challenge (First sale in 7 days)</li>
+                        <li>🎁 Advanced Scaling Strategies</li>
+                        <li>🎁 Affiliate Recruitment Scripts</li>
+                        <li>🎁 Corporate Sales Blueprint</li>
+                        <li>🎁 1-on-1 Onboarding Call</li>
                     </ul>
-                </div>
-            </div>
-
-            <!-- Value Stack -->
-            <div class="bg-black rounded-2xl p-8 text-center">
-                <p class="text-2xl text-gray-400 mb-4">Total Real World Value:</p>
-                <p class="text-5xl font-bold text-gray-500 line-through mb-6">$8,491</p>
-                
-                <p class="text-2xl text-gray-400 mb-4">Your Investment Today:</p>
-                <p class="text-7xl font-bold gradient-text mb-2 animate-pulse-slow">$47</p>
-                <p class="text-green-400 text-xl">You Save $8,444 (99.4% Discount)</p>
-                
-                <div class="bg-red-900/30 border border-red-800 rounded-lg p-4 mt-6">
-                    <p class="text-red-400 font-bold">⚠️ Price increases to $297 when timer hits zero</p>
-                    <p class="text-2xl font-bold text-white mt-2" id="countdown">04:23:17</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Guarantee Section -->
-    <section class="py-20 px-4 bg-gradient-to-b from-black via-gray-950 to-black">
+    <!-- Common Questions -->
+    <section class="py-20 px-6">
         <div class="max-w-4xl mx-auto">
-            <div class="premium-border rounded-2xl p-8 bg-gray-950 text-center glow-gold">
-                <h2 class="text-4xl font-bold mb-6 gradient-text">My "You Can't Lose" Triple Guarantee</h2>
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-12">
+                Common Questions
+            </h2>
+
+            <div class="space-y-6">
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">Do I need to be an expert to create PDFs?</h3>
+                    <p class="text-gray-400">
+                        No. You need to be a good researcher and organizer. I knew nothing about most topics 
+                        I've created PDFs about. I research, organize, and present information clearly. That's it.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">How long does it take to create a PDF?</h3>
+                    <p class="text-gray-400">
+                        Your first PDF might take 8-10 hours. By your third, you'll have it down to 4-6 hours. 
+                        I can now create a new PDF in 3-4 hours using my system and templates.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">What if my PDF doesn't sell?</h3>
+                    <p class="text-gray-400">
+                        Follow the validation process in Module 2, and this rarely happens. But if it does, 
+                        you've only lost a few hours. Unlike physical products, there's no inventory risk. 
+                        Most students get sales on their first PDF.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">How much money do I need to start?</h3>
+                    <p class="text-gray-400">
+                        Besides this course? Zero. You can use free tools to create PDFs, free platforms to sell, 
+                        and free traffic to get customers. Once you're making money, you can invest in ads to scale.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">Is the market saturated?</h3>
+                    <p class="text-gray-400">
+                        There are millions of problems people need solved. While everyone fights over dropshipping 
+                        and crypto, PDF sellers quietly make bank. New problems emerge daily. The market for 
+                        information is infinite.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">Can I really make $10K+ per month?</h3>
+                    <p class="text-gray-400">
+                        187 of my students are already there. Will everyone? No. But if you follow the system, 
+                        create quality PDFs, and stay consistent, $5-10K/month is very achievable within 3-6 months.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">What makes this different from other courses?</h3>
+                    <p class="text-gray-400">
+                        I'm actively doing this every day. This isn't theory - it's exactly what I do to make 
+                        $47K/month. You get my actual templates, actual ads, actual everything. Plus, our 
+                        community is incredibly supportive.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3">Is there a guarantee?</h3>
+                    <p class="text-gray-400">
+                        Yes. 30-day money-back guarantee. If you follow the system and don't make your first sale 
+                        within 30 days, I'll refund you. That's how confident I am this works.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section id="start" class="py-20 px-6 bg-gray-950/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-display text-4xl md:text-5xl text-center mb-12">
+                Start Building Your PDF Business Today
+            </h2>
+
+            <div class="bg-gray-900 rounded-xl p-8 text-center premium-border">
+                <p class="text-2xl text-gray-400 mb-4">Everything You Need To Succeed</p>
                 
-                <div class="space-y-6 text-left">
-                    <div class="bg-black/50 rounded-xl p-6">
-                        <p class="text-xl font-bold text-green-400 mb-2">Guarantee #1: First Sale in 7 Days</p>
-                        <p class="text-gray-300">Make your first sale within 7 days or I'll personally help you until you do.</p>
-                    </div>
-                    
-                    <div class="bg-black/50 rounded-xl p-6">
-                        <p class="text-xl font-bold text-green-400 mb-2">Guarantee #2: $1,000 in 30 Days</p>
-                        <p class="text-gray-300">Hit $1,000 in sales within 30 days or get a full refund + keep everything.</p>
-                    </div>
-                    
-                    <div class="bg-black/50 rounded-xl p-6">
-                        <p class="text-xl font-bold text-green-400 mb-2">Guarantee #3: 10X ROI in 90 Days</p>
-                        <p class="text-gray-300">Make 10X your investment ($470) in 90 days or I'll work with you for free until you do.</p>
-                    </div>
-                </div>
-
-                <p class="text-xl font-bold text-yellow-400 mt-8">
-                    You literally cannot lose. The only risk is staying broke.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Urgency Section -->
-    <section class="py-20 px-4">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="font-display text-5xl md:text-6xl text-center mb-12">
-                Why You Need To Act <span class="text-red-500">Right Now</span>
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-gradient-to-br from-red-950/30 to-red-900/20 rounded-xl p-8 border border-red-800">
-                    <h3 class="text-2xl font-bold mb-4 text-red-400">If You Wait:</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li>❌ Price jumps to $297 (in 4 hours)</li>
-                        <li>❌ Bonuses disappear forever</li>
-                        <li>❌ Another month passes in your situation</li>
-                        <li>❌ Competition gets stronger</li>
-                        <li>❌ You stay stuck while others succeed</li>
-                        <li>❌ Regret hits harder each day</li>
-                    </ul>
-                </div>
-
-                <div class="bg-gradient-to-br from-green-950/30 to-green-900/20 rounded-xl p-8 border border-green-800">
-                    <h3 class="text-2xl font-bold mb-4 text-green-400">If You Join Now:</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li>✅ Lock in $47 price forever</li>
-                        <li>✅ Get all bonuses ($4,494 value)</li>
-                        <li>✅ Start tonight, sale tomorrow</li>
-                        <li>✅ Join 2,847 successful students</li>
-                        <li>✅ Change your life in weeks</li>
-                        <li>✅ Finally prove doubters wrong</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Scarcity Elements -->
-            <div class="bg-gradient-to-r from-orange-950/30 to-red-950/30 rounded-2xl p-8 text-center border border-orange-800">
-                <p class="text-3xl font-bold mb-4 text-orange-400">⚠️ IMPORTANT NOTICE ⚠️</p>
-                <p class="text-xl text-gray-300 mb-6">
-                    I'm capping enrollment at 3,000 students to maintain quality support.
-                </p>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div>
-                        <p class="text-4xl font-bold gradient-text">2,847</p>
-                        <p class="text-gray-400">Current Students</p>
-                    </div>
-                    <div>
-                        <p class="text-4xl font-bold text-red-400">153</p>
-                        <p class="text-gray-400">Spots Remaining</p>
-                    </div>
-                    <div>
-                        <p class="text-4xl font-bold text-yellow-400 animate-pulse">47</p>
-                        <p class="text-gray-400">Joining Every Hour</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section id="get-access" class="py-20 px-4 bg-gradient-to-t from-black via-gray-950 to-black">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="font-display text-5xl md:text-6xl text-center mb-12">
-                This Is Your <span class="gradient-text">Defining Moment</span>
-            </h2>
-
-            <!-- Personal Message -->
-            <div class="bg-gray-900 rounded-2xl p-8 mb-12">
-                <h3 class="text-2xl font-bold mb-6">A Personal Message From Me:</h3>
-                <p class="text-lg text-gray-300 mb-4">
-                    Six months ago, I was stealing toilet paper from McDonald's because I couldn't afford to buy it.
-                </p>
-                <p class="text-lg text-gray-300 mb-4">
-                    My mom was crying on the phone, blaming herself for my situation. My ex was posting vacation pics with her new man.
-                </p>
-                <p class="text-lg text-gray-300 mb-4">
-                    I wanted to disappear. I felt like a complete failure.
-                </p>
-                <p class="text-lg text-gray-300 mb-4">
-                    Then I discovered PDF selling. Not dropshipping. Not crypto. Not another scam. Just simple PDFs.
-                </p>
-                <p class="text-lg text-gray-300 mb-4">
-                    <span class="text-white font-bold">First month: $4,827. Second month: $12,493. Third month: $24,847.</span>
-                </p>
-                <p class="text-lg text-gray-300 mb-4">
-                    Last week, I paid off my mom's mortgage. Cash. She hasn't stopped crying (happy tears this time).
-                </p>
-                <p class="text-xl font-bold text-yellow-400 mt-6">
-                    This works. I promise you. But only if you take action right now.
-                </p>
-            </div>
-
-            <!-- Final CTA Box -->
-            <div class="premium-border rounded-2xl p-8 bg-gray-950 text-center glow-gold">
-                <p class="text-3xl font-bold mb-4">Ready To Change Your Life?</p>
-                <p class="text-xl text-gray-400 mb-8">Join 2,847 students already making $5K-$50K/month</p>
-
-                <!-- Price Display -->
                 <div class="mb-8">
-                    <p class="text-gray-400 line-through text-2xl">Regular Price: $297</p>
-                    <p class="text-6xl font-black gradient-text my-4 animate-pulse-slow">Just $47</p>
-                    <p class="text-green-400 text-xl">Save $250 Today Only (84% OFF)</p>
+                    <p class="text-5xl font-bold text-white mb-2">$497</p>
+                    <p class="text-gray-400">One-time payment • Lifetime access</p>
                 </div>
 
-                <!-- Main CTA Button -->
-                <a href="https://buy.stripe.com/YOUR_LINK" class="premium-gradient text-black font-black text-2xl px-14 py-7 rounded-xl inline-block hover:scale-105 transition-all duration-300 shine mb-6">
-                    GET INSTANT ACCESS NOW →
+                <div class="bg-black/30 rounded-lg p-6 mb-8 text-left">
+                    <p class="font-semibold mb-4">You Get Immediate Access To:</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ All 15 training modules (10+ hours)</li>
+                        <li>✓ Templates, tools, and resources</li>
+                        <li>✓ Private community access</li>
+                        <li>✓ Weekly coaching calls</li>
+                        <li>✓ All future updates</li>
+                        <li>✓ 30-day money-back guarantee</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="premium-gradient text-black font-bold text-xl px-12 py-5 rounded-lg inline-block hover:opacity-90 transition mb-4">
+                    Get Instant Access Now →
                 </a>
-
-                <!-- Payment Options -->
-                <div class="flex justify-center items-center space-x-4 mb-6">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='25'%3E%3Crect width='40' height='25' fill='%23ddd' rx='4'/%3E%3C/svg%3E" alt="Visa">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='25'%3E%3Crect width='40' height='25' fill='%23ddd' rx='4'/%3E%3C/svg%3E" alt="Mastercard">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='25'%3E%3Crect width='40' height='25' fill='%23ddd' rx='4'/%3E%3C/svg%3E" alt="Amex">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='25'%3E%3Crect width='40' height='25' fill='%23ddd' rx='4'/%3E%3C/svg%3E" alt="PayPal">
-                </div>
-
-                <!-- Trust Elements -->
-                <div class="text-gray-400 text-sm space-y-1">
-                    <p>🔒 256-bit SSL Secure Checkout</p>
-                    <p>⚡ Instant Access After Purchase</p>
-                    <p>📧 Support: support@pdfprofitsystem.com</p>
-                    <p>💰 30-Day Money Back Guarantee</p>
-                </div>
+                
+                <p class="text-gray-500 text-sm">
+                    Secure checkout • All major cards accepted • Instant access
+                </p>
             </div>
 
-            <!-- Final Warning -->
-            <div class="bg-red-950/30 border border-red-800 rounded-2xl p-6 mt-8 text-center">
-                <p class="text-2xl font-bold text-red-400 mb-2">⚠️ FINAL WARNING</p>
-                <p class="text-lg text-gray-300">
-                    When this timer hits zero, the price goes to $297. No exceptions. No extensions.
+            <!-- Guarantee Box -->
+            <div class="mt-8 bg-green-900/20 border border-green-800 rounded-xl p-6 text-center">
+                <h3 class="text-2xl font-bold mb-3 text-green-400">30-Day Money-Back Guarantee</h3>
+                <p class="text-gray-300">
+                    Try the entire system risk-free. If you don't make your first sale within 30 days, 
+                    get a full refund. No questions asked.
                 </p>
-                <p class="text-3xl font-bold gradient-text mt-4 animate-pulse" id="final-countdown">04:23:17</p>
+            </div>
+
+            <!-- Final Message -->
+            <div class="mt-12 text-center">
+                <p class="text-xl text-gray-400 mb-6">
+                    Join 2,847 students already building their PDF businesses
+                </p>
+                <p class="text-gray-500">
+                    Have questions? Email support@pdfseller.com
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 px-4 border-t border-gray-900">
-        <div class="max-w-6xl mx-auto text-center">
-            <p class="text-gray-500 text-sm mb-4">© 2024 PDF Profit System™ - All Rights Reserved</p>
-            <div class="flex justify-center space-x-6 text-sm">
+    <footer class="py-12 px-6 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <p class="text-2xl font-bold mb-2">
+                    <span class="gradient-text">PDFSeller</span> Method
+                </p>
+                <p class="text-gray-500 text-sm">
+                    The proven system for building a profitable PDF business
+                </p>
+            </div>
+            
+            <div class="flex justify-center space-x-6 text-sm mb-8">
                 <a href="#" class="text-gray-400 hover:text-white">Terms</a>
                 <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
                 <a href="#" class="text-gray-400 hover:text-white">Support</a>
                 <a href="#" class="text-gray-400 hover:text-white">Affiliates</a>
             </div>
-            <p class="text-gray-600 text-xs mt-8 max-w-3xl mx-auto">
-                Disclaimer: Results are not typical. Your results will vary based on your effort, dedication, and many other factors. 
-                We make no guarantees of income. All business involves risk.
+            
+            <p class="text-gray-600 text-xs text-center max-w-3xl mx-auto">
+                © 2024 PDFSeller Method. Results shown are not typical and will vary based on effort, 
+                dedication, and other factors. We make no guarantee of income. All business involves risk.
             </p>
         </div>
     </footer>
 
-    <!-- Floating Notification -->
-    <div id="notification" class="fixed bottom-6 left-6 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-4 rounded-xl shadow-2xl hidden z-50">
-        <p class="font-bold" id="notification-text"></p>
-    </div>
-
-    <!-- Sticky Mobile CTA -->
-    <div class="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-black/95 backdrop-blur border-t border-yellow-800 z-40">
-        <a href="#get-access" class="premium-gradient text-black font-bold text-lg py-3 rounded-lg block text-center">
-            Get Access for $47 →
-        </a>
-    </div>
-
     <script>
-        // Countdown Timer
-        function updateCountdown() {
-            let seconds = 15797; // 4:23:17 in seconds
-            const countdownElements = ['countdown', 'final-countdown'];
-            
-            setInterval(() => {
-                const hours = Math.floor(seconds / 3600);
-                const minutes = Math.floor((seconds % 3600) / 60);
-                const secs = seconds % 60;
-                
-                const display = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-                
-                countdownElements.forEach(id => {
-                    const element = document.getElementById(id);
-                    if (element) element.textContent = display;
-                });
-                
-                seconds--;
-                if (seconds < 0) seconds = 15797;
-            }, 1000);
-        }
-        updateCountdown();
-
-        // Social Proof Notifications
-        const notifications = [
-            { name: 'Michael from Texas', action: 'just enrolled', time: '2 minutes ago' },
-            { name: 'Sarah from California', action: 'just enrolled', time: '5 minutes ago' },
-            { name: 'David from Florida', action: 'made first sale', time: '8 minutes ago' },
-            { name: 'Emma from New York', action: 'just enrolled', time: '11 minutes ago' },
-            { name: 'James from Illinois', action: 'hit $1K milestone', time: '14 minutes ago' },
-            { name: 'Lisa from Arizona', action: 'just enrolled', time: '17 minutes ago' },
-            { name: 'Robert from Ohio', action: 'made $847 today', time: '20 minutes ago' },
-            { name: 'Jennifer from Georgia', action: 'just enrolled', time: '23 minutes ago' },
-        ];
-
-        function showNotification() {
-            const notification = document.getElementById('notification');
-            const text = document.getElementById('notification-text');
-            const data = notifications[Math.floor(Math.random() * notifications.length)];
-            
-            text.textContent = `🔥 ${data.name} ${data.action} (${data.time})`;
-            notification.classList.remove('hidden');
-            
-            setTimeout(() => {
-                notification.classList.add('hidden');
-            }, 5000);
-        }
-
-        // Show notification every 30 seconds
-        setInterval(showNotification, 30000);
-        // Show first notification after 5 seconds
-        setTimeout(showNotification, 5000);
-
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
