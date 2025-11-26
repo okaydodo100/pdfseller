@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFSeller System - Member Area</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #0a0a0f; }
+        .gradient-border {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+            padding: 1px;
+            border-radius: 16px;
+        }
+        .gradient-border-inner {
+            background: #12121a;
+            border-radius: 15px;
+            height: 100%;
+        }
+        .module-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #22c55e, #3b82f6);
+        }
+        .glow {
+            box-shadow: 0 0 60px rgba(59, 130, 246, 0.3);
+        }
+        .locked {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+    
+    <header class="border-b border-gray-800 bg-black/50 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold">P</div>
+                <span class="text-xl font-semibold">PDFSeller System</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <span class="text-sm text-gray-400">Welcome back</span>
+                <div class="w-9 h-9 rounded-full bg-gradient-to-br from-green-400 to-blue-500"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        
+        <div class="mb-12">
+            <h1 class="text-4xl font-bold mb-3">Your $900/Day Blueprint</h1>
+            <p class="text-gray-400 text-lg">The exact system I use to build and sell digital products. Follow each phase in order.</p>
+        </div>
+
+        <div class="gradient-border mb-12 glow">
+            <div class="gradient-border-inner p-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-xl font-semibold">Your Progress</h2>
+                    <span class="text-2xl font-bold text-green-400">0%</span>
+                </div>
+                <div class="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div class="progress-bar h-full rounded-full" style="width: 0%"></div>
+                </div>
+                <p class="text-gray-500 text-sm mt-3">Complete all 5 phases to unlock the $100K Scaling Blueprint bonus</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5 text-center">
+                <p class="text-3xl font-bold text-blue-400">5</p>
+                <p class="text-sm text-gray-500">Core Phases</p>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5 text-center">
+                <p class="text-3xl font-bold text-purple-400">47</p>
+                <p class="text-sm text-gray-500">Lessons</p>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5 text-center">
+                <p class="text-3xl font-bold text-green-400">23</p>
+                <p class="text-sm text-gray-500">Templates</p>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5 text-center">
+                <p class="text-3xl font-bold text-pink-400">6</p>
+                <p class="text-sm text-gray-500">Bonuses</p>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-6">Course Modules</h2>
+        
+        <div class="space-y-4">
+            
+            <!-- Phase 1 -->
+            <a href="phase1.html" class="block">
+                <div class="module-card bg-gray-900/50 border border-gray-800 rounded-2xl p-6 transition-all duration-300 hover:border-blue-500/50 cursor-pointer">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-2xl font-bold shrink-0">1</div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-xl font-semibold">The Goldmine Discovery System</h3>
+                                <span class="px-2 py-0.5 bg-blue-500/20 text-blue-400 text-xs rounded-full">Start Here</span>
+                            </div>
+                            <p class="text-gray-400 mb-4">Find profitable niches where people desperately need help and are willing to pay. The exact research method to discover $10K+/month opportunities.</p>
+                            <div class="flex items-center gap-6 text-sm">
+                                <span class="text-gray-500">9 Lessons</span>
+                                <span class="text-gray-500">~90 min</span>
+                            </div>
+                        </div>
+                        <div class="text-blue-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Phase 2 -->
+            <a href="phase2.html" class="block">
+                <div class="module-card bg-gray-900/50 border border-gray-800 rounded-2xl p-6 transition-all duration-300 hover:border-purple-500/50 cursor-pointer">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-2xl font-bold shrink-0">2</div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-xl font-semibold">AI Product Creation</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Use Claude AI to create your entire digital product in hours. The exact prompts, structure, and workflow I use to build courses that sell.</p>
+                            <div class="flex items-center gap-6 text-sm">
+                                <span class="text-gray-500">11 Lessons</span>
+                                <span class="text-gray-500">~120 min</span>
+                            </div>
+                        </div>
+                        <div class="text-purple-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Phase 3 -->
+            <a href="phase3.html" class="block">
+                <div class="module-card bg-gray-900/50 border border-gray-800 rounded-2xl p-6 transition-all duration-300 hover:border-green-500/50 cursor-pointer">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center text-2xl font-bold shrink-0">3</div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-xl font-semibold">Tech Setup (GitHub, Vercel, Stripe)</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Set up your professional infrastructure in under 1 hour. Domain, hosting, and payments — the exact tech stack that costs almost nothing.</p>
+                            <div class="flex items-center gap-6 text-sm">
+                                <span class="text-gray-500">8 Lessons</span>
+                                <span class="text-gray-500">~60 min</span>
+                            </div>
+                        </div>
+                        <div class="text-green-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Phase 4 -->
+            <a href="phase4.html" class="block">
+                <div class="module-card bg-gray-900/50 border border-gray-800 rounded-2xl p-6 transition-all duration-300 hover:border-yellow-500/50 cursor-pointer">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center text-2xl font-bold shrink-0">4</div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-xl font-semibold">The Conversion Machine</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Build a sales page that converts at 3-5%. The psychology, structure, and exact prompts to create pages that turn visitors into buyers.</p>
+                            <div class="flex items-center gap-6 text-sm">
+                                <span class="text-gray-500">10 Lessons</span>
+                                <span class="text-gray-500">~100 min</span>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Phase 5 -->
+            <a href="phase5.html" class="block">
+                <div class="module-card bg-gray-900/50 border border-gray-800 rounded-2xl p-6 transition-all duration-300 hover:border-pink-500/50 cursor-pointer">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-2xl font-bold shrink-0">5</div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-xl font-semibold">Traffic & First Sales</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Get your first paying customers this week. Free traffic methods that work immediately, then scale with paid ads for 300%+ ROI.</p>
+                            <div class="flex items-center gap-6 text-sm">
+                                <span class="text-gray-500">9 Lessons</span>
+                                <span class="text-gray-500">~90 min</span>
+                            </div>
+                        </div>
+                        <div class="text-pink-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Tools We Use Section -->
+        <h2 class="text-2xl font-bold mt-16 mb-6">The Exact Tools You'll Use</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5">
+                <div class="text-3xl mb-3">🤖</div>
+                <h3 class="font-semibold mb-1">Claude AI</h3>
+                <p class="text-sm text-gray-500">Creates all your content, code, and sales pages</p>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5">
+                <div class="text-3xl mb-3">📦</div>
+                <h3 class="font-semibold mb-1">GitHub</h3>
+                <p class="text-sm text-gray-500">Free storage for your website files</p>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5">
+                <div class="text-3xl mb-3">🚀</div>
+                <h3 class="font-semibold mb-1">Vercel</h3>
+                <p class="text-sm text-gray-500">Free professional hosting</p>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-5">
+                <div class="text-3xl mb-3">💳</div>
+                <h3 class="font-semibold mb-1">Stripe</h3>
+                <p class="text-sm text-gray-500">Accept payments worldwide</p>
+            </div>
+        </div>
+
+        <!-- Support -->
+        <div class="mt-16 bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800/30 rounded-2xl p-8 text-center">
+            <h3 class="text-xl font-semibold mb-2">Need Help?</h3>
+            <p class="text-gray-400 mb-4">Got stuck? Have questions? I'm here to help.</p>
+            <a href="mailto:support@pdfseller.com" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl font-medium transition-colors">Contact Support</a>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-gray-800 mt-20 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>© 2025 PDFSeller System. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
