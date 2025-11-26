@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 2: AI Product Creation - PDFSeller System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #0a0a0f; }
+        .action-box { background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.1)); border: 1px solid rgba(34, 197, 94, 0.3); }
+        .warning-box { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); }
+        .example-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); }
+        .prompt-box { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); }
+        code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        pre { background: #1e293b; padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; font-size: 0.85em; }
+    </style>
+</head>
+<body class="text-gray-100">
+
+    <header class="border-b border-gray-800 bg-black/90 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </a>
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center font-bold text-sm">2</div>
+                <span class="font-medium">Phase 2: AI Product Creation</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        
+        <div class="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-800/30 rounded-2xl p-8 mb-12">
+            <h1 class="text-3xl font-bold mb-3">Phase 2: AI Product Creation</h1>
+            <p class="text-gray-300 text-lg mb-6">Use Claude AI to build your entire digital product in hours — the exact system I use</p>
+            <div class="flex flex-wrap gap-4 text-sm">
+                <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full">11 Lessons</span>
+                <span class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full">~120 minutes</span>
+            </div>
+        </div>
+
+        <div class="prose prose-invert max-w-none">
+
+            <!-- LESSON 1 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 1</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">The AI-First Approach (Why This Works)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">I'm going to teach you the exact method I use to create digital products. It's probably not what you expect.</p>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Most people think creating a course takes months. Writing content, designing pages, learning to code... it sounds overwhelming.</p>
+                
+                <p class="text-gray-300 leading-relaxed mb-4"><strong>Here's the reality: AI changed everything.</strong></p>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">With the right AI tool and the right prompts, you can create in hours what used to take weeks:</p>
+                <ul class="text-gray-300 space-y-2 mb-6">
+                    <li>→ Complete course content (lessons, examples, action steps)</li>
+                    <li>→ Professional HTML/CSS websites (no coding knowledge needed)</li>
+                    <li>→ Sales pages that convert</li>
+                    <li>→ Email sequences</li>
+                    <li>→ Bonuses and templates</li>
+                </ul>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">This isn't about pumping out AI garbage. It's about using AI as a tool to execute YOUR vision, YOUR expertise, YOUR unique angle — just faster than humanly possible.</p>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">You bring the knowledge from your research. You bring the understanding of your audience. AI helps you organize it and present it professionally.</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">What You'll Create in This Phase:</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>✅ A complete course/guide with multiple lessons</li>
+                        <li>✅ Professional HTML website to deliver it</li>
+                        <li>✅ All in a fraction of the time it would take manually</li>
+                        <li>✅ You direct, AI executes</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- LESSON 2 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 2</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Setting Up Claude (Step-by-Step)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">The AI tool I recommend is Claude by Anthropic. It writes more naturally than other AIs and can create complete, working websites. Here's how to set it up:</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 1: Create Your Account</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Go to <code>claude.ai</code></li>
+                        <li>2. Click "Sign Up" in the top right</li>
+                        <li>3. Use your email or Google account</li>
+                        <li>4. Verify your email</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 2: Upgrade to Claude Pro ($20/month)</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Once logged in, click "Upgrade" or go to Settings</li>
+                        <li>2. Select "Claude Pro" — $20/month</li>
+                        <li>3. Enter payment info</li>
+                        <li>4. You now have access to the most powerful AI for content creation</li>
+                    </ol>
+                </div>
+                
+                <div class="example-box rounded-xl p-6 mb-6">
+                    <p class="text-purple-300 font-semibold mb-2">💡 Why Claude Pro?</p>
+                    <p class="text-gray-300 mb-0">Claude Pro gives you access to their best models which write more naturally, understand complex instructions, and can create entire websites. The $20/month pays for itself with your first sale.</p>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 3: Enable Important Features</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. In Claude, go to Settings (gear icon)</li>
+                        <li>2. Enable "Artifacts" — this lets Claude create files and code</li>
+                        <li>3. This is crucial — Claude will create your actual website files</li>
+                    </ol>
+                </div>
+                
+                <div class="action-box rounded-xl p-6">
+                    <p class="text-green-400 font-bold mb-2">✅ Your Action Step:</p>
+                    <p class="text-gray-300">Set up your Claude Pro account right now. Don't continue until this is done. You'll need it for everything that follows.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 3 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 3</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Your Product Structure (The Blueprint)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Every successful digital product follows a structure. Here's what your course/guide will look like:</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">The 5-Phase Product Structure:</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 rounded-lg bg-blue-500/30 flex items-center justify-center text-blue-400 font-bold shrink-0">1</span>
+                            <div>
+                                <p class="text-white font-semibold">Foundation</p>
+                                <p class="text-gray-400 text-sm">Mindset, overview, what to expect. Gets them excited and prepared.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 rounded-lg bg-purple-500/30 flex items-center justify-center text-purple-400 font-bold shrink-0">2</span>
+                            <div>
+                                <p class="text-white font-semibold">Core Method</p>
+                                <p class="text-gray-400 text-sm">Your main system/framework. The "how to do it" — multiple lessons.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 rounded-lg bg-green-500/30 flex items-center justify-center text-green-400 font-bold shrink-0">3</span>
+                            <div>
+                                <p class="text-white font-semibold">Implementation</p>
+                                <p class="text-gray-400 text-sm">Step-by-step action plans. Checklists. Templates. Make it easy.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 rounded-lg bg-yellow-500/30 flex items-center justify-center text-yellow-400 font-bold shrink-0">4</span>
+                            <div>
+                                <p class="text-white font-semibold">Quick Wins</p>
+                                <p class="text-gray-400 text-sm">Fast tactics they can use immediately. Builds confidence.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="w-8 h-8 rounded-lg bg-pink-500/30 flex items-center justify-center text-pink-400 font-bold shrink-0">5</span>
+                            <div>
+                                <p class="text-white font-semibold">Resources</p>
+                                <p class="text-gray-400 text-sm">Tools, further reading, FAQ. Makes it a complete toolkit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Each phase has multiple lessons. A typical product has 25-50 lessons total.</p>
+                
+                <p class="text-gray-300 leading-relaxed">Your job is to direct Claude with the right prompts. Let's show you exactly how.</p>
+            </section>
+
+            <!-- LESSON 4 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 4</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">The Master Prompt (How to Talk to Claude)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">The quality of Claude's output depends 100% on your prompt. Here's the template I use for creating course content:</p>
+                
+                <div class="prompt-box rounded-xl p-6 mb-6">
+                    <h3 class="text-blue-300 font-bold mb-4">📋 MASTER PROMPT TEMPLATE:</h3>
+                    <pre class="text-gray-300 whitespace-pre-wrap text-sm">I'm creating a digital course about [YOUR TOPIC] for [TARGET AUDIENCE].
+
+ABOUT MY AUDIENCE:
+- They are: [specific demographics — age, job, situation]
+- Their main problem: [the core pain point from your research]
+- What they've tried: [solutions that didn't work]
+- What they want: [their desired outcome]
+
+REAL QUOTES FROM MY RESEARCH:
+"[Paste actual quote from Reddit/Facebook]"
+"[Paste another quote]"
+
+YOUR TASK:
+Create [SPECIFIC CONTENT] for my course.
+
+REQUIREMENTS:
+- Write in a conversational, friendly tone
+- Include specific, actionable steps (not vague advice)
+- Use real examples they can relate to
+- Make it detailed and comprehensive
+- Format with clear headers and bullet points
+
+OUTPUT FORMAT:
+[Specify if you want HTML, markdown, specific structure, etc.]</pre>
+                </div>
+                
+                <h3 class="text-white font-bold mb-4">Why This Prompt Works:</h3>
+                <ul class="text-gray-300 space-y-2 mb-6">
+                    <li><strong>Target audience context:</strong> Claude writes differently when it knows WHO it's writing for</li>
+                    <li><strong>Real quotes:</strong> Claude picks up the emotional tone and vocabulary of your audience</li>
+                    <li><strong>Specific task:</strong> Focus beats trying to generate everything at once</li>
+                    <li><strong>Requirements:</strong> Sets quality standards and prevents generic output</li>
+                    <li><strong>Output format:</strong> Gets you exactly what you need, ready to use</li>
+                </ul>
+            </section>
+
+            <!-- LESSON 5 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 5</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Creating Your Course Content</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Here's exactly how to prompt Claude to create each section of your course:</p>
+                
+                <div class="prompt-box rounded-xl p-6 mb-6">
+                    <h3 class="text-blue-300 font-bold mb-4">Prompt for Course Outline:</h3>
+                    <pre class="text-gray-300 whitespace-pre-wrap text-sm">I'm creating a course about [TOPIC] for [AUDIENCE].
+
+Their main problem: [PROBLEM]
+Their goal: [DESIRED OUTCOME]
+
+Create a complete course outline with:
+- 5 main phases/modules
+- 5-10 lessons per phase
+- Brief description of what each lesson covers
+
+Make it comprehensive — this should solve their entire problem from start to finish.
+
+The course should take them from [STARTING POINT] to [END RESULT].</pre>
+                </div>
+                
+                <div class="prompt-box rounded-xl p-6 mb-6">
+                    <h3 class="text-blue-300 font-bold mb-4">Prompt for Individual Lessons:</h3>
+                    <pre class="text-gray-300 whitespace-pre-wrap text-sm">Write Lesson [NUMBER]: [TITLE] for my course about [TOPIC].
+
+This lesson teaches [SPECIFIC SKILL/CONCEPT].
+
+Include:
+1. Why this matters (2-3 paragraphs)
+2. Common mistakes people make (with explanations)
+3. The correct approach (step-by-step)
+4. Real-world example showing this in action
+5. Pro tips for better results
+6. Action checklist at the end
+
+Target audience: [AUDIENCE]
+Their knowledge level: [BEGINNER/INTERMEDIATE]
+
+Make it detailed and actionable — someone should be able to implement this immediately after reading.
+
+Write approximately 1500-2000 words.</pre>
+                </div>
+                
+                <div class="warning-box rounded-xl p-6 mb-6">
+                    <p class="text-red-300 font-semibold mb-2">⚠️ Important:</p>
+                    <p class="text-gray-300 mb-0">Create one lesson at a time. Don't try to generate the entire course in one prompt. Quality drops when you ask for too much at once. Generate, review, then move to the next lesson.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 6 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 6</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Getting Claude to Build Your Website</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">This is the powerful part. Claude doesn't just write content — it can create complete, professional HTML websites.</p>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">Here's how to get Claude to build your course website:</p>
+                
+                <div class="prompt-box rounded-xl p-6 mb-6">
+                    <h3 class="text-blue-300 font-bold mb-4">Prompt for Course Dashboard:</h3>
+                    <pre class="text-gray-300 whitespace-pre-wrap text-sm">Create a professional HTML course dashboard page for my digital course.
+
+COURSE NAME: [Your Course Name]
+PHASES:
+- Phase 1: [Name] - [X lessons]
+- Phase 2: [Name] - [X lessons]
+- Phase 3: [Name] - [X lessons]
+- Phase 4: [Name] - [X lessons]
+- Phase 5: [Name] - [X lessons]
+
+DESIGN REQUIREMENTS:
+- Modern, premium dark theme
+- Clean typography
+- Progress tracking section
+- Each phase is a clickable card linking to its page
+- Professional, not generic
+- Mobile responsive
+
+Use Tailwind CSS via CDN for styling.
+Make it look like a $500 course, not a cheap template.
+
+Output complete, working HTML that I can save and use immediately.</pre>
+                </div>
+                
+                <div class="prompt-box rounded-xl p-6 mb-6">
+                    <h3 class="text-blue-300 font-bold mb-4">Prompt for Lesson Pages:</h3>
+                    <pre class="text-gray-300 whitespace-pre-wrap text-sm">Create an HTML page for Phase [X] of my course.
+
+PHASE TITLE: [Title]
+LESSONS IN THIS PHASE:
+1. [Lesson title]
+2. [Lesson title]
+3. [Lesson title]
+[etc.]
+
+DESIGN:
+- Match the dashboard design (dark theme, Tailwind CSS)
+- Sidebar navigation showing all lessons
+- Main content area for lesson text
+- Professional formatting for the lesson content
+- Previous/Next navigation at bottom
+
+Include the full content for Lesson 1:
+[Paste your lesson content here]
+
+Make sure links work (sidebar links to lesson anchors).</pre>
+                </div>
+                
+                <div class="action-box rounded-xl p-6">
+                    <p class="text-green-400 font-bold mb-2">✅ Pro Tip:</p>
+                    <p class="text-gray-300">When Claude creates HTML files, click "Download" on the artifact to save it. You'll upload these files to GitHub in Phase 3.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 7 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 7</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">The Iteration Process</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Claude rarely gets it perfect on the first try. Here's how to refine:</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Refinement Prompts:</h3>
+                    <ul class="text-gray-300 space-y-3">
+                        <li><strong>"Make it longer and more detailed"</strong> — When content is too thin</li>
+                        <li><strong>"Add more specific examples"</strong> — When it's too abstract</li>
+                        <li><strong>"Make the tone more conversational"</strong> — When it sounds robotic</li>
+                        <li><strong>"Add step-by-step instructions for [X]"</strong> — When it's missing actionability</li>
+                        <li><strong>"Include a checklist at the end"</strong> — When you need action items</li>
+                        <li><strong>"Fix the [specific issue]"</strong> — For targeted fixes</li>
+                    </ul>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">The key is to be specific. Don't say "make it better." Say exactly what you want changed.</p>
+                
+                <div class="example-box rounded-xl p-6">
+                    <p class="text-purple-300 font-semibold mb-2">Example Iteration:</p>
+                    <p class="text-gray-300 mb-2"><strong>You:</strong> "The lesson about [X] is good but I want you to add a real-world case study showing someone who implemented this and got results. Make it specific with numbers."</p>
+                    <p class="text-gray-400 text-sm mb-0">Claude will add exactly that. Be specific, get specific results.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 8 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 8</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Adding Value Multipliers</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Make your course feel worth 10x the price by including these bonus elements:</p>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <p class="text-white font-semibold mb-2">📋 Checklists</p>
+                        <p class="text-gray-400 text-sm">Action checklists for each lesson. Ask Claude: "Create a downloadable checklist for this lesson"</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <p class="text-white font-semibold mb-2">📝 Templates</p>
+                        <p class="text-gray-400 text-sm">Fill-in-the-blank templates. Ask Claude to create templates relevant to your topic.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <p class="text-white font-semibold mb-2">📊 Worksheets</p>
+                        <p class="text-gray-400 text-sm">Self-assessment worksheets, planning worksheets, tracking sheets.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <p class="text-white font-semibold mb-2">📚 Resource Lists</p>
+                        <p class="text-gray-400 text-sm">Curated tools, books, websites. Ask Claude to create a resource guide.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <p class="text-white font-semibold mb-2">✉️ Swipe Files</p>
+                        <p class="text-gray-400 text-sm">Done-for-them emails, scripts, examples they can copy.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <p class="text-white font-semibold mb-2">❓ FAQ Section</p>
+                        <p class="text-gray-400 text-sm">Common questions answered. Use questions from your research.</p>
+                    </div>
+                </div>
+                
+                <div class="prompt-box rounded-xl p-6">
+                    <h3 class="text-blue-300 font-bold mb-4">Prompt for Bonuses:</h3>
+                    <pre class="text-gray-300 whitespace-pre-wrap text-sm">Create a [CHECKLIST/TEMPLATE/RESOURCE LIST] for my course about [TOPIC].
+
+This should help students [SPECIFIC GOAL].
+
+Make it:
+- Practical and immediately usable
+- Professional looking
+- Comprehensive but not overwhelming
+
+Output as HTML that matches my course design.</pre>
+                </div>
+            </section>
+
+            <!-- LESSON 9 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 9</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Quality Control Checklist</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Before moving on, verify your course meets these standards:</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Content Quality:</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>☐ Every lesson has specific, actionable steps</li>
+                        <li>☐ Real examples are included (not generic)</li>
+                        <li>☐ Content addresses problems from your research</li>
+                        <li>☐ Tone is conversational, not robotic</li>
+                        <li>☐ Each lesson is 1000+ words minimum</li>
+                        <li>☐ No filler content — every paragraph adds value</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Website Quality:</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>☐ All links work correctly</li>
+                        <li>☐ Navigation is clear and intuitive</li>
+                        <li>☐ Looks professional on desktop</li>
+                        <li>☐ Looks professional on mobile</li>
+                        <li>☐ Consistent design across all pages</li>
+                        <li>☐ Fast loading (no heavy images)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4">Value Check:</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>☐ At least 3 bonus elements (checklists, templates, etc.)</li>
+                        <li>☐ Complete solution to the problem (not partial)</li>
+                        <li>☐ Would YOU pay $27+ for this? Be honest.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- LESSON 10 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 10</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Organizing Your Files</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Your course will be multiple HTML files. Here's how to organize them:</p>
+                
+                <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">File Structure:</h3>
+                    <pre class="text-green-400 text-sm">your-course/
+├── index.html          (Course dashboard)
+├── phase1.html         (Phase 1 lessons)
+├── phase2.html         (Phase 2 lessons)
+├── phase3.html         (Phase 3 lessons)
+├── phase4.html         (Phase 4 lessons)
+├── phase5.html         (Phase 5 lessons)
+└── bonuses.html        (Bonus content)</pre>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">How to Save Files from Claude:</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. When Claude creates HTML, it appears in an "artifact" box</li>
+                        <li>2. Click the download button (or copy the code)</li>
+                        <li>3. Save as <code>.html</code> file with the correct name</li>
+                        <li>4. Create a folder on your computer for all course files</li>
+                        <li>5. Keep all HTML files in this one folder</li>
+                    </ol>
+                </div>
+                
+                <div class="action-box rounded-xl p-6">
+                    <p class="text-green-400 font-bold mb-2">✅ Your Action Step:</p>
+                    <p class="text-gray-300">Create a folder called "my-course" on your computer. As you generate each page with Claude, save the HTML files to this folder. You'll upload this entire folder to GitHub in Phase 3.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 11 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full">Lesson 11</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Your Creation Action Plan</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">Here's the exact sequence to create your course:</p>
+                
+                <div class="space-y-4 mb-6">
+                    <div class="bg-gray-800/50 rounded-xl p-6">
+                        <h3 class="text-white font-bold mb-2">Step 1: Create Course Outline (30 min)</h3>
+                        <p class="text-gray-400">Use the outline prompt to generate your complete course structure. Save this — it's your roadmap.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-xl p-6">
+                        <h3 class="text-white font-bold mb-2">Step 2: Create Dashboard Page (20 min)</h3>
+                        <p class="text-gray-400">Generate your main course dashboard HTML. Save as index.html.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-xl p-6">
+                        <h3 class="text-white font-bold mb-2">Step 3: Create Phase Pages (2-3 hours)</h3>
+                        <p class="text-gray-400">One at a time, generate each phase page with all its lessons. Generate content, then ask Claude to format as HTML matching your design.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-xl p-6">
+                        <h3 class="text-white font-bold mb-2">Step 4: Create Bonus Content (30 min)</h3>
+                        <p class="text-gray-400">Generate your value multipliers — checklists, templates, resource lists.</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-xl p-6">
+                        <h3 class="text-white font-bold mb-2">Step 5: Review & Refine (30 min)</h3>
+                        <p class="text-gray-400">Open all HTML files in your browser. Test links. Check quality. Fix issues with targeted prompts to Claude.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-green-900/30 border border-green-500/30 rounded-xl p-8 text-center">
+                    <p class="text-3xl mb-4">🎉</p>
+                    <p class="text-white text-xl font-bold mb-2">Phase 2 Complete!</p>
+                    <p class="text-gray-300 mb-4">You now have a complete digital course — content AND website.</p>
+                    <p class="text-gray-300">Next: Phase 3 shows you how to put it online with GitHub, Vercel, and get your own domain.</p>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="mt-12 flex justify-between items-center">
+                <a href="phase1.html" class="text-gray-400 hover:text-white transition-colors">← Back to Phase 1</a>
+                <a href="phase3.html" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl font-medium hover:opacity-90 transition-opacity">Continue to Phase 3 →</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
