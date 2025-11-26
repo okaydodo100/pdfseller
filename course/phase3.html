@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 3: Tech Setup - PDFSeller System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #0a0a0f; }
+        .action-box { background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.1)); border: 1px solid rgba(34, 197, 94, 0.3); }
+        .warning-box { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); }
+        .example-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); }
+        code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    </style>
+</head>
+<body class="text-gray-100">
+
+    <header class="border-b border-gray-800 bg-black/90 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </a>
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center font-bold text-sm">3</div>
+                <span class="font-medium">Phase 3: Tech Setup</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        
+        <div class="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border border-green-800/30 rounded-2xl p-8 mb-12">
+            <h1 class="text-3xl font-bold mb-3">Phase 3: Tech Setup</h1>
+            <p class="text-gray-300 text-lg mb-6">Get your course online with professional hosting and payment processing — costs almost nothing</p>
+            <div class="flex flex-wrap gap-4 text-sm">
+                <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full">8 Lessons</span>
+                <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full">~60 minutes</span>
+            </div>
+        </div>
+
+        <div class="bg-gray-800/50 rounded-xl p-6 mb-12">
+            <h3 class="text-white font-bold mb-4">What You'll Set Up:</h3>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="text-3xl mb-2">📦</div>
+                    <p class="text-white font-semibold">GitHub</p>
+                    <p class="text-gray-400 text-sm">Store your files</p>
+                    <p class="text-green-400 text-xs">FREE</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🚀</div>
+                    <p class="text-white font-semibold">Vercel</p>
+                    <p class="text-gray-400 text-sm">Host your website</p>
+                    <p class="text-green-400 text-xs">FREE</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🌐</div>
+                    <p class="text-white font-semibold">Namecheap</p>
+                    <p class="text-gray-400 text-sm">Your domain name</p>
+                    <p class="text-yellow-400 text-xs">~$10/year</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">💳</div>
+                    <p class="text-white font-semibold">Stripe</p>
+                    <p class="text-gray-400 text-sm">Accept payments</p>
+                    <p class="text-green-400 text-xs">FREE (2.9% per sale)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="prose prose-invert max-w-none">
+
+            <!-- LESSON 1 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 1</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Why This Tech Stack?</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">I've tested dozens of platforms. This stack is the best because:</p>
+                
+                <ul class="text-gray-300 space-y-3 mb-6">
+                    <li><strong>It's almost free:</strong> Only ~$10/year for your domain. Everything else is free.</li>
+                    <li><strong>It's professional:</strong> Your site loads fast, looks legitimate, works on all devices.</li>
+                    <li><strong>You own everything:</strong> No platform can shut you down or take a cut.</li>
+                    <li><strong>It scales infinitely:</strong> Can handle 10 visitors or 10,000 without extra cost.</li>
+                    <li><strong>It's simple:</strong> Once set up, it just works. No maintenance needed.</li>
+                </ul>
+                
+                <div class="warning-box rounded-xl p-6 mb-6">
+                    <p class="text-red-300 font-semibold mb-2">⚠️ Why NOT Gumroad, Teachable, etc.:</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>→ They take 5-10%+ of every sale (adds up fast)</li>
+                        <li>→ Your site looks like everyone else's</li>
+                        <li>→ They can ban you at any time</li>
+                        <li>→ Limited customization</li>
+                        <li>→ Monthly fees that eat your profits</li>
+                    </ul>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed">With our stack: You keep 97%+ of every sale. Your site is unique. You have full control.</p>
+            </section>
+
+            <!-- LESSON 2 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 2</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">GitHub Setup (Step-by-Step)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">GitHub stores your website files. Think of it as a folder in the cloud that Vercel can access.</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 1: Create GitHub Account</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Go to <code>github.com</code></li>
+                        <li>2. Click "Sign up"</li>
+                        <li>3. Enter your email</li>
+                        <li>4. Create a password</li>
+                        <li>5. Choose a username (this will be visible, pick something professional)</li>
+                        <li>6. Complete the verification puzzle</li>
+                        <li>7. Verify your email</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 2: Create a New Repository</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Once logged in, click the green "New" button (or the + icon in top right)</li>
+                        <li>2. Name your repository (example: <code>my-course</code>)</li>
+                        <li>3. Set it to "Public" (required for free Vercel hosting)</li>
+                        <li>4. Check "Add a README file"</li>
+                        <li>5. Click "Create repository"</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 3: Upload Your Course Files</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. In your new repository, click "Add file" → "Upload files"</li>
+                        <li>2. Drag your entire course folder (all HTML files) into the upload area</li>
+                        <li>3. Wait for upload to complete</li>
+                        <li>4. Add a commit message like "Add course files"</li>
+                        <li>5. Click "Commit changes"</li>
+                    </ol>
+                </div>
+                
+                <div class="example-box rounded-xl p-6 mb-6">
+                    <p class="text-purple-300 font-semibold mb-2">💡 Important:</p>
+                    <p class="text-gray-300 mb-0">Your main page MUST be named <code>index.html</code>. This is the file that loads when someone visits your site. Make sure it's in the root of your repository (not inside a subfolder).</p>
+                </div>
+                
+                <div class="action-box rounded-xl p-6">
+                    <p class="text-green-400 font-bold mb-2">✅ Your Action Step:</p>
+                    <p class="text-gray-300">Create your GitHub account and upload your course files right now. Don't continue until your files are in GitHub.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 3 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 3</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Vercel Setup (Step-by-Step)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Vercel takes your GitHub files and turns them into a live website. It's automatic and free.</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 1: Create Vercel Account</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Go to <code>vercel.com</code></li>
+                        <li>2. Click "Sign Up"</li>
+                        <li>3. Choose "Continue with GitHub" (important — this connects them)</li>
+                        <li>4. Authorize Vercel to access your GitHub</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 2: Import Your Repository</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Click "Add New..." → "Project"</li>
+                        <li>2. You'll see your GitHub repositories listed</li>
+                        <li>3. Find your course repository and click "Import"</li>
+                        <li>4. Leave all settings as default</li>
+                        <li>5. Click "Deploy"</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 3: Wait for Deployment</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Vercel will build and deploy your site (takes 30-60 seconds)</li>
+                        <li>2. Once done, you'll see "Congratulations!" with a link</li>
+                        <li>3. Click the link to see your live website!</li>
+                        <li>4. Your URL will be something like: <code>your-project.vercel.app</code></li>
+                    </ol>
+                </div>
+                
+                <div class="bg-green-900/30 border border-green-500/30 rounded-xl p-6 mb-6">
+                    <p class="text-green-300 font-semibold mb-2">🎉 Your site is now LIVE!</p>
+                    <p class="text-gray-300 mb-0">Anyone can access it at the vercel.app URL. But we want a professional custom domain, which we'll set up next.</p>
+                </div>
+                
+                <div class="example-box rounded-xl p-6">
+                    <p class="text-purple-300 font-semibold mb-2">💡 Automatic Updates:</p>
+                    <p class="text-gray-300 mb-0">Whenever you update files in GitHub, Vercel automatically redeploys your site. You never need to manually update — just push changes to GitHub.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 4 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 4</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Buying Your Domain (Namecheap)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">A custom domain (like <code>yourbrand.com</code>) makes you look professional and legitimate. Namecheap has the best prices.</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 1: Find Your Domain</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Go to <code>namecheap.com</code></li>
+                        <li>2. Search for your desired domain name</li>
+                        <li>3. Aim for a .com if possible (most trusted)</li>
+                        <li>4. Expect to pay $8-15/year for a .com domain</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 2: Purchase the Domain</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Add desired domain to cart</li>
+                        <li>2. Create a Namecheap account (or log in)</li>
+                        <li>3. At checkout, TURN OFF all extras (they're not needed)</li>
+                        <li>4. Turn ON "WhoisGuard" (free privacy protection)</li>
+                        <li>5. Complete purchase</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Naming Tips:</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>→ Keep it short and memorable</li>
+                        <li>→ Easy to spell (no weird variations)</li>
+                        <li>→ Relates to your niche or brand</li>
+                        <li>→ Avoid hyphens and numbers if possible</li>
+                    </ul>
+                </div>
+                
+                <div class="example-box rounded-xl p-6">
+                    <p class="text-purple-300 font-semibold mb-2">💡 Domain Ideas:</p>
+                    <p class="text-gray-300 mb-0"><code>[topic]mastery.com</code>, <code>[topic]system.com</code>, <code>the[topic]guide.com</code>, <code>[topic]blueprint.com</code></p>
+                </div>
+            </section>
+
+            <!-- LESSON 5 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 5</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Connecting Domain to Vercel</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Now we connect your custom domain to your Vercel site. This is the trickiest part — follow exactly.</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 1: Add Domain in Vercel</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Go to your Vercel dashboard</li>
+                        <li>2. Click on your project</li>
+                        <li>3. Go to "Settings" tab</li>
+                        <li>4. Click "Domains" in the sidebar</li>
+                        <li>5. Enter your domain name (e.g., <code>yourdomain.com</code>)</li>
+                        <li>6. Click "Add"</li>
+                        <li>7. Vercel will show you DNS records to configure</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 2: Configure DNS in Namecheap</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Log in to Namecheap</li>
+                        <li>2. Go to "Domain List"</li>
+                        <li>3. Click "Manage" next to your domain</li>
+                        <li>4. Find "Nameservers" section</li>
+                        <li>5. Select "Custom DNS"</li>
+                        <li>6. Enter Vercel's nameservers:
+                            <div class="bg-gray-900 rounded-lg p-4 mt-2">
+                                <code class="text-green-400 block">ns1.vercel-dns.com</code>
+                                <code class="text-green-400 block">ns2.vercel-dns.com</code>
+                            </div>
+                        </li>
+                        <li>7. Click the checkmark to save</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 3: Wait for Propagation</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>→ DNS changes can take up to 48 hours (usually much faster)</li>
+                        <li>→ Typically works within 15-30 minutes</li>
+                        <li>→ Vercel will show "Valid Configuration" when ready</li>
+                        <li>→ Your site will now work at <code>yourdomain.com</code>!</li>
+                    </ul>
+                </div>
+                
+                <div class="warning-box rounded-xl p-6">
+                    <p class="text-red-300 font-semibold mb-2">⚠️ Common Issue:</p>
+                    <p class="text-gray-300 mb-0">If it's not working after 30 minutes, try visiting your domain in an incognito/private browser window. Sometimes your browser caches the old DNS.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 6 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 6</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Stripe Setup (Accept Payments)</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Stripe lets you accept credit card payments from customers worldwide. No monthly fees — just 2.9% + $0.30 per transaction.</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 1: Create Stripe Account</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Go to <code>stripe.com</code></li>
+                        <li>2. Click "Start now"</li>
+                        <li>3. Enter your email and create password</li>
+                        <li>4. Complete verification (they'll ask for basic info)</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 2: Activate Your Account</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. Click "Activate payments" in your dashboard</li>
+                        <li>2. Fill in your business details (you can use your name if no business)</li>
+                        <li>3. Add your bank account for payouts</li>
+                        <li>4. Verify your identity (they may ask for ID)</li>
+                        <li>5. This process takes 1-2 days for approval</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 3: Create a Payment Link</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. In Stripe dashboard, go to "Payment Links" (in left sidebar)</li>
+                        <li>2. Click "Create payment link"</li>
+                        <li>3. Enter your product name (your course name)</li>
+                        <li>4. Set the price ($27, or whatever you're charging)</li>
+                        <li>5. Click "Create link"</li>
+                        <li>6. Copy your payment link — this is what customers click to pay!</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Step 4: Configure Success Redirect</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. In your payment link settings, find "After payment"</li>
+                        <li>2. Select "Redirect to your website"</li>
+                        <li>3. Enter your course URL (e.g., <code>yourdomain.com/course</code>)</li>
+                        <li>4. Now when someone pays, they automatically get sent to your course!</li>
+                    </ol>
+                </div>
+                
+                <div class="example-box rounded-xl p-6">
+                    <p class="text-purple-300 font-semibold mb-2">💡 The Flow:</p>
+                    <p class="text-gray-300 mb-0">Customer clicks "Buy Now" on your sales page → Goes to Stripe checkout → Pays → Automatically redirected to your course. That's it!</p>
+                </div>
+            </section>
+
+            <!-- LESSON 7 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 7</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Connecting Everything Together</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Here's how all the pieces fit together:</p>
+                
+                <div class="bg-gray-900 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">The Customer Journey:</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <span class="w-8 h-8 rounded-full bg-blue-500/30 flex items-center justify-center text-blue-400 font-bold shrink-0">1</span>
+                            <p class="text-gray-300">Customer visits your sales page (hosted on Vercel)</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-8 h-8 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-400 font-bold shrink-0">2</span>
+                            <p class="text-gray-300">They click "Buy Now" button (links to your Stripe payment link)</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-8 h-8 rounded-full bg-green-500/30 flex items-center justify-center text-green-400 font-bold shrink-0">3</span>
+                            <p class="text-gray-300">They pay on Stripe's secure checkout</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-8 h-8 rounded-full bg-yellow-500/30 flex items-center justify-center text-yellow-400 font-bold shrink-0">4</span>
+                            <p class="text-gray-300">Stripe redirects them to your course page</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-8 h-8 rounded-full bg-pink-500/30 flex items-center justify-center text-pink-400 font-bold shrink-0">5</span>
+                            <p class="text-gray-300">They access your course — sale complete!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">What You Need to Add to Your Sales Page:</h3>
+                    <p class="text-gray-300 mb-4">On your sales page (we'll build this in Phase 4), add a button that links to your Stripe payment link:</p>
+                    <pre class="text-green-400 text-sm bg-gray-900 p-4 rounded-lg">&lt;a href="YOUR_STRIPE_PAYMENT_LINK"&gt;Buy Now - $27&lt;/a&gt;</pre>
+                    <p class="text-gray-400 text-sm mt-4">Replace YOUR_STRIPE_PAYMENT_LINK with the actual link from Stripe.</p>
+                </div>
+            </section>
+
+            <!-- LESSON 8 -->
+            <section class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 text-sm font-medium rounded-full">Lesson 8</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Testing Your Setup</h2>
+                
+                <p class="text-gray-300 leading-relaxed mb-4">Before going live, test everything:</p>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Testing Checklist:</h3>
+                    <ul class="text-gray-300 space-y-3">
+                        <li>☐ <strong>Domain works:</strong> Visit yourdomain.com — does your site load?</li>
+                        <li>☐ <strong>All pages work:</strong> Click through every page of your course</li>
+                        <li>☐ <strong>Mobile works:</strong> Check your site on your phone</li>
+                        <li>☐ <strong>Stripe test:</strong> Use Stripe's test mode to simulate a purchase</li>
+                        <li>☐ <strong>Redirect works:</strong> After test payment, do you land on the course?</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-800/50 rounded-xl p-6 mb-6">
+                    <h3 class="text-white font-bold mb-4">Stripe Test Mode:</h3>
+                    <ol class="text-gray-300 space-y-2">
+                        <li>1. In Stripe, toggle "Test mode" (switch at top of dashboard)</li>
+                        <li>2. Create a test payment link (same process as before)</li>
+                        <li>3. Use card number: <code>4242 4242 4242 4242</code></li>
+                        <li>4. Any future expiry, any CVC</li>
+                        <li>5. Complete the test purchase</li>
+                        <li>6. Verify you land on your course page</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-green-900/30 border border-green-500/30 rounded-xl p-8 text-center">
+                    <p class="text-3xl mb-4">🎉</p>
+                    <p class="text-white text-xl font-bold mb-2">Your Infrastructure is Ready!</p>
+                    <p class="text-gray-300 mb-4">You now have a professional setup that can accept payments from anywhere in the world.</p>
+                    <p class="text-gray-300">Next: Phase 4 shows you how to build a sales page that converts visitors into buyers.</p>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="mt-12 flex justify-between items-center">
+                <a href="phase2.html" class="text-gray-400 hover:text-white transition-colors">← Back to Phase 2</a>
+                <a href="phase4.html" class="px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl font-medium hover:opacity-90 transition-opacity">Continue to Phase 4 →</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
